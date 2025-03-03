@@ -33,6 +33,16 @@ The primary goal is to develop and evaluate a **medical chatbot** that:
 
 By the end of this project, the chatbot should enhance **medical decision-making** and act as a **reliable AI assistant** in healthcare settings.
 
+# Working Steps
+
+1. Discharge notes collection from MIMIC-IV database
+2. Clinical trials retrieved from ClinicalTrials.gov API
+3. Data Preprocessing (Clean, Segment, Categorize).
+4. Vectorization using BioBERT embedding model.
+5. Vectorstore Setup for efficient retrieval.
+6. Query Handling with RAG (retrieve relevant information based on user query).
+7. Response Generation based on the retrieved data.
+8. Evaluation by comparing RAG and non-RAG systems.
 
 # RAG Pipeline
 
