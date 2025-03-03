@@ -1,4 +1,4 @@
-# CSIT-697-MS-Project-Medical-Chatbot
+# MS Final Project on Medical Chatbot
 
 # Project Title
 
