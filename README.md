@@ -24,6 +24,7 @@ This project aims to answer the following key questions:
 # Objective
 
 The primary goal is to develop and evaluate a **medical chatbot** that:
+
 ✅ **Implements a RAG-based pipeline** to fetch relevant discharge notes before generating responses.
 
 ✅ **Supports clinical question answering** for **Heart Attack & Kidney Disease**, ensuring responses are grounded in real clinical data.
