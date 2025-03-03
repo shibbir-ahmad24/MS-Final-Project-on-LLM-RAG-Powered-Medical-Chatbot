@@ -13,7 +13,7 @@ By integrating **advanced NLP techniques**, this chatbot will provide meaningful
 Medical discharge summaries are **dense, complex, and filled with medical jargon,** making it challenging for both healthcare providers and patients to quickly extract relevant insights. Traditional chatbots, while useful, often struggle with **hallucinations (providing false information)** or fail to retrieve **accurate, case-specific knowledge** from structured datasets.
 
 - **How can we ensure chatbot responses are grounded in real medical records?**
-- **Does using a RAG-based approach improve answer accuracy compared to a traditional LLM chatbot?**
+- **Does using a RAG-based approach improve response accuracy compared to a traditional LLM chatbot?**
 - **How do we handle domain-specific medical terms and ensure responses align with real clinical knowledge?**
 
 This project tackles these challenges by implementing a **retrieval-based knowledge system**, reducing misinformation and enhancing response reliability.
