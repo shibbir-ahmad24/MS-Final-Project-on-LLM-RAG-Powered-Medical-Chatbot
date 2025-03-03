@@ -48,7 +48,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
    - to generate responses based on the retrieved data, refine for clarity, accuracy, and user-friendliness
 10. Evaluation by Comparing RAG and Non-RAG Based LLM Models
 11. User Interface Design and Deployment
-   - to design a clean, intuitive interface using Streamlit for healthcare professionals to interact with the chatbot.
+    - to design a clean, intuitive interface using Streamlit for healthcare professionals to interact with the chatbot.
 
 # RAG Pipeline
 
