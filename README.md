@@ -10,6 +10,11 @@
 
 # Tech Stack
 
+- Python
+- LLM
+- SQL
+- Jupyter Notebook
+
 # Advisor
 
 Dr. Hao Liu
