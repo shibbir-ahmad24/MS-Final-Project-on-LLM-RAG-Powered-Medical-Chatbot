@@ -46,14 +46,6 @@ By the end of this project, the chatbot should enhance **medical decision-making
 - Streamlit / Hugging Face Spaces (Deployment & UI)
 - Docker (Containerization for deployment)
 
-# Advisor
-
-Dr. Hao Liu
-
-Assistant Professor, School of Computing,
-
-Montclair State University, New Jersey.
-
 # Project Deadline 
 
 April 30, 2025
