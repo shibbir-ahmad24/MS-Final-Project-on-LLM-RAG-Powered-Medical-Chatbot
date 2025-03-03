@@ -45,7 +45,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
 7. Query Handling with RAG
    - to retrieve relevant information based on user query using RAG pipeline
 8. Response Generation using LLM
-   - Generate responses based on the retrieved data, refine for clarity, accuracy, and user-friendliness
+   - to generate responses based on the retrieved data, refine for clarity, accuracy, and user-friendliness
 10. Evaluation by Comparing RAG and Non-RAG Systems
 11. User Interface Design
     - to ensure a clean, intuitive interface for healthcare professionals to interact with the chatbot
