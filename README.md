@@ -36,7 +36,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
 
 # RAG Pipeline
 
-[!RAG Pipeline.jpg](https://github.com/shibbir-ahmad24/CSIT-697-MS-Project-Medical-Chatbot/blob/main/RAG%20Pipeline.jpg)
+![RAG Pipeline](https://github.com/shibbir-ahmad24/CSIT-697-MS-Project-Medical-Chatbot/blob/main/RAG%20Pipeline.jpg)
 
 # Tech Stack
 
