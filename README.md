@@ -43,12 +43,12 @@ By the end of this project, the chatbot should enhance **medical decision-making
 5. Vectorization using BioBERT Embedding Model
 6. Vectorstore Setup for Efficient Retrieval
 7. Query Handling with RAG
-   - to retrieve relevant information based on user query using RAG pipeline
+   - to implement RAG pipeline to retrieve relevant information based on user query
 8. Response Generation using LLM
-   - to generate responses based on the retrieved data, refine for clarity, accuracy, and user-friendliness
+   - to generate responses based on the retrieved data, ensuring clarity, accuracy, and relevance in answering the user’s query.
 10. Evaluation by Comparing RAG and Non-RAG Based LLM Models
 11. User Interface Design and Deployment
-    - to design a clean, intuitive interface using Streamlit for healthcare professionals to interact with the chatbot.
+    - to design and deploy a clean, intuitive interface using Streamlit, enabling healthcare professionals to easily interact with the chatbot.
 
 # RAG Pipeline
 
