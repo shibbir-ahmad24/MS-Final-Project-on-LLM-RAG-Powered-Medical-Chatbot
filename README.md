@@ -10,13 +10,17 @@ By integrating **advanced NLP techniques**, this chatbot will provide meaningful
 
 # Problem Statement
 
-Medical discharge summaries are **dense, complex, and filled with medical jargon,** making it challenging for both healthcare providers and patients to quickly extract relevant insights. Traditional chatbots, while useful, often struggle with **hallucinations (providing false information)** or fail to retrieve **accurate, case-specific knowledge** from structured datasets.
+Medical discharge summaries are **dense, complex, and filled with medical jargon,** making it challenging for both healthcare providers and patients to extract relevant insights quickly. Traditional chatbots often:
+- Struggle with **hallucinations (false or misleading responses).**
+- Fail to retrieve **accurate, case-specific knowledge** from structured datasets.
+- Lack **domain-specific adaptation** to medical terminology and discharge notes.
 
-- **How can we ensure chatbot responses are grounded in real medical records?**
-- **Does using a RAG-based approach improve response accuracy compared to a traditional LLM chatbot?**
-- **How do we handle domain-specific medical terms and ensure responses align with real clinical knowledge?**
+This project aims to answer the following key questions:
+- **How can we ensure chatbot responses are grounded in real clinical discharge notes?**
+- **Does integrating a RAG pipeline improve response accuracy compared to a traditional LLM chatbot?**
+- **Do any versions of the chatbot hallucinate or provide false information?**
+- **How can we effectively fetch and utilize MIMIC-IV discharge summaries for conditions like Heart Attack & Kidney Disease to improve chatbot reliability?**
 
-This project tackles these challenges by implementing a **retrieval-based knowledge system**, reducing misinformation and enhancing response reliability.
 
 
 # Objective
