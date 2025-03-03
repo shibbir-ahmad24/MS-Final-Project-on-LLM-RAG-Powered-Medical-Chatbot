@@ -1,6 +1,8 @@
 # CSIT-697-MS-Project-Medical-Chatbot
 
-**Retrieval-Augmented Generation (RAG) with LLMs for Clinical Question Answering**
+# Project Title
+
+Developing an **LLM-RAG Powered Medical Chatbot** for Clinical Question Answering
 
 # Overview
 
