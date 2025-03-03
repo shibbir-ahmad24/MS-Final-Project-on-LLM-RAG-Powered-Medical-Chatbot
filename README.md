@@ -35,14 +35,20 @@ By the end of this project, the chatbot should enhance **medical decision-making
 
 # Working Steps
 
-1. Discharge notes collection from MIMIC-IV database
-2. Clinical trials retrieved from ClinicalTrials.gov API
-3. Data Preprocessing (Clean, Segment, Categorize).
-4. Vectorization using BioBERT embedding model.
-5. Vectorstore Setup for efficient retrieval.
-6. Query Handling with RAG (retrieve relevant information based on user query).
-7. Response Generation based on the retrieved data.
-8. Evaluation by comparing RAG and non-RAG systems.
+1. Discharge Notes Collection from MIMIC-IV Database
+2. Clinical Trials Retrieval from ClinicalTrials.gov API
+3. Data Preprocessing (Clean, Segment, and Categorize)
+4. Handling User Queries for Clinical Question Answering
+   - to design and optimize the system for answering Heart Attack and Kidney Disease-related queries
+5. Vectorization using BioBERT Embedding Model
+6. Vectorstore Setup for Efficient Retrieval
+7. Query Handling with RAG
+   - to retrieve relevant information based on user query
+8. Response Generation Based on Retrieved Data
+   - to refine responses for clarity, accuracy, and user-friendliness
+9. Evaluation by Comparing RAG and Non-RAG Systems
+10. User Interface Design
+    - to ensure a clean, intuitive interface for healthcare professionals to interact with the chatbot
 
 # RAG Pipeline
 
