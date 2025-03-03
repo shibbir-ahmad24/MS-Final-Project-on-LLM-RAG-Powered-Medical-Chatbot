@@ -44,6 +44,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
 - SQL (Structured data management)
 - Jupyter Notebook (Exploration & prototyping)
 - Streamlit / Hugging Face Spaces (Deployment & UI)
+- Docker (Containerization for deployment)
 
 # Advisor
 
