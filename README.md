@@ -21,9 +21,17 @@ This project aims to answer the following key questions:
 - **Do any versions of the chatbot hallucinate or provide false information?**
 - **How can we effectively fetch and utilize MIMIC-IV discharge summaries for conditions like Heart Attack & Kidney Disease to improve chatbot reliability?**
 
-
-
 # Objective
+
+The primary goal is to develop and evaluate a **medical chatbot** that:
+✅ **Implements a RAG-based pipeline** to fetch relevant discharge notes before generating responses.
+✅ **Supports clinical question answering** for **Heart Attack & Kidney Disease**, ensuring responses are grounded in real clinical data.
+✅ **Minimizes hallucinations and false information** by comparing **RAG vs. non-RAG chatbot responses**.
+✅ **Fetches and processes MIMIC-IV discharge summaries** efficiently.
+✅ **Deploys using Hugging Face Spaces or Streamlit**, integrating **VectorDB** for efficient data retrieval and response generation.
+
+By the end of this project, the chatbot should enhance **medical decision-making** and act as a **reliable AI assistant** in healthcare settings.
+
 
 # System Workflow
 
