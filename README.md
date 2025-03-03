@@ -34,7 +34,9 @@ The primary goal is to develop and evaluate a **medical chatbot** that:
 By the end of this project, the chatbot should enhance **medical decision-making** and act as a **reliable AI assistant** in healthcare settings.
 
 
-# System Workflow
+# RAG Pipeline
+
+[!RAG Pipeline.jpg]
 
 # Tech Stack
 
