@@ -47,8 +47,8 @@ By the end of this project, the chatbot should enhance **medical decision-making
 8. Response Generation using LLM
    - to generate responses based on the retrieved data, refine for clarity, accuracy, and user-friendliness
 10. Evaluation by Comparing RAG and Non-RAG Based LLM Models
-11. User Interface Design
-    - to ensure a clean, intuitive interface for healthcare professionals to interact with the chatbot
+11. User Interface Design and Deployment
+   - to design a clean, intuitive interface using Streamlit for healthcare professionals to interact with the chatbot.
 
 # RAG Pipeline
 
@@ -61,7 +61,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
 - Faiss / ChromaDB (Vector database for retrieval)
 - SQL (Structured data management)
 - Jupyter Notebook (Exploration & prototyping)
-- Streamlit / Hugging Face Spaces (Deployment & UI)
+- Streamlit (Deployment & UI)
 - Docker (Containerization for deployment)
 
 # Project Deadline 
