@@ -38,10 +38,12 @@ By the end of this project, the chatbot should enhance **medical decision-making
 
 # Tech Stack
 
-- Python
-- LLM
-- SQL
-- Jupyter Notebook
+- Python (Core programming language)
+- Hugging Face Transformers (LLM integration)
+- Faiss / ChromaDB (Vector database for retrieval)
+- SQL (Structured data management)
+- Jupyter Notebook (Exploration & prototyping)
+- Streamlit / Hugging Face Spaces (Deployment & UI)
 
 # Advisor
 
