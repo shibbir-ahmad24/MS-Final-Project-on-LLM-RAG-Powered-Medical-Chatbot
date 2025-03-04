@@ -33,6 +33,11 @@ The primary goal is to develop and evaluate a **medical chatbot** that:
 
 By the end of this project, the chatbot should enhance **medical decision-making** and act as a **reliable AI assistant** in healthcare settings.
 
+# Data Source
+
+- discharge note dataset: https://physionet.org/content/mimic-iv-note/2.2/note/
+- clinical trials: ClinicalTrials.gov API
+
 # Working Steps
 
 1. Discharge Notes Collection from MIMIC-IV Database
