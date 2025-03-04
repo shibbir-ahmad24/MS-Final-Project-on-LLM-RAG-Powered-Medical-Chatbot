@@ -35,8 +35,8 @@ By the end of this project, the chatbot should enhance **medical decision-making
 
 # Data Source
 
-- discharge note dataset: https://physionet.org/content/mimic-iv-note/2.2/note/
-- clinical trials: ClinicalTrials.gov API
+- discharge note dataset from MIMIC-IV DB: https://physionet.org/content/mimic-iv-note/2.2/note/
+- clinical trials from ClinicalTrials.gov API: https://clinicaltrials.gov/data-api/api
 
 # Working Steps
 
