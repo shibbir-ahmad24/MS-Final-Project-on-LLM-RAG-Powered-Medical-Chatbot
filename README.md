@@ -57,7 +57,7 @@ By the end of this project, the chatbot should enhance **medical decision-making
 
 # Workflow
 
-![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Project-Workflow1.jpg)
+![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Project-Workflow2.jpg)
 
 # RAG Pipeline
 
