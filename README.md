@@ -58,12 +58,11 @@ By integrating PySpur’s RAG pipeline, this methodology ensures that the chatbo
 
 - Python (Core programming language)
 - Hugging Face Transformers (LLM integration)
-- Faiss / ChromaDB (Vector database for retrieval)
+- PySpur (Vector database for retrieval)
 - SQL (Structured data management)
 - Jupyter Notebook (Exploration & prototyping)
 - Streamlit (Deployment & UI)
-- Docker (Containerization for deployment)
 
 # Project Deadline 
 
-April 30, 2025
+April 25, 2025
