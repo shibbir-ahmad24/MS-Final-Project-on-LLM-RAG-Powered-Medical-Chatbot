@@ -55,6 +55,10 @@ By the end of this project, the chatbot should enhance **medical decision-making
 11. User Interface Design and Deployment
     - to design and deploy a clean, intuitive interface using Streamlit, enabling healthcare professionals to easily interact with the chatbot.
 
+# Workflow
+
+![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Project-Workflow1.jpg)
+
 # RAG Pipeline
 
 ![RAG Pipeline](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/RAG-Pipeline2.jpg)
