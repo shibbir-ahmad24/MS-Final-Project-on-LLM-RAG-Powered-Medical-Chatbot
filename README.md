@@ -6,7 +6,7 @@ Developing an **LLM-RAG Powered Medical Chatbot** for Clinical Question Answerin
 
 # Overview
 
-Healthcare professionals and researchers often need quick and reliable insights from medical records, especially discharge summaries, which contain critical patient information. This project aims to build an **AI-powered medical chatbot** that leverages **Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs)** to answer clinical questions based on real-world patient discharge notes from the **MIMIC-IV dataset**. By integrating **advanced NLP techniques**, this chatbot will provide meaningful, **context-aware responses** to help healthcare professionals, researchers, and even patients understand complex medical summaries efficiently.
+Healthcare professionals and researchers often need quick and reliable insights from medical records, especially discharge summaries, which contain critical patient information. This project aims to build an **AI-powered medical chatbot** that leverages **PySpur RAG (Retrieval-Augmented Generation) mechanism and Large Language Models (LLMs)** to answer clinical questions based on real-world patient discharge notes from the **MIMIC-IV dataset**. By integrating **advanced NLP techniques**, this chatbot will provide meaningful, **context-aware responses** to help healthcare professionals, researchers, and even patients understand complex medical summaries efficiently.
 
 # Problem Statement
 
