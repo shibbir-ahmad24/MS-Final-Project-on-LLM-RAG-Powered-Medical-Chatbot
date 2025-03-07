@@ -56,12 +56,12 @@ By integrating PySpur’s RAG pipeline, this methodology ensures that the chatbo
 
 # Tech Stack
 
-- Python (Core programming language)
-- Hugging Face Transformers (LLM integration)
-- PySpur (Vector database for retrieval)
-- SQL (Structured data management)
-- Jupyter Notebook (Exploration & prototyping)
-- Streamlit (Deployment & UI)
+- **Python:** Core programming language for development.
+- **Hugging Face Transformers:** For integrating large language models (LLMs).
+- **PySpur:** For efficient vector database-based retrieval in the RAG pipeline.
+- **SQL:** For structured data management and querying.
+- **Jupyter Notebook:** For exploration, prototyping, and experimentation.
+- **Streamlit:** For deployment and building the user interface (UI).
 
 # Project Deadline 
 
