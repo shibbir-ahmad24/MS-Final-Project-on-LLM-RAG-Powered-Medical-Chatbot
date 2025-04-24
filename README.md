@@ -38,7 +38,7 @@ The scope of the chatbot will be confined to understanding and responding to cli
 
 # PySpur RAG Pipeline
 
-![Workflow]([https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg])
+![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
 
 # Methodology Overview
 
