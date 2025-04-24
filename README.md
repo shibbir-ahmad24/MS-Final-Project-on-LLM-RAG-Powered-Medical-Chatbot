@@ -36,7 +36,7 @@ The scope of the chatbot will be confined to understanding and responding to cli
 - discharge note dataset from MIMIC-IV DB: https://physionet.org/content/mimic-iv-note/2.2/note/
 - clinical trials from ClinicalTrials.gov API: https://clinicaltrials.gov/data-api/api
 
-# PySpur RAG Pipeline
+# Workflow Diagram
 
 ![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
 
