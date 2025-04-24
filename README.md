@@ -2,7 +2,7 @@
 
 # Project Title
 
-Developing an **LLM-RAG Powered Medical Chatbot** for Clinical Question Answering
+An Intelligent **Medical QA Chatbot** Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
 
 # Overview
 
