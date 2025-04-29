@@ -5,6 +5,7 @@ from metrics_tracker import MetricsTracker
 from embedding import generate_embeddings_from_files
 from tool_handler import chat_memory_tool, treatment_tool, symptom_search_tool, trial_matcher_tool
 
+
 # Set page config
 st.set_page_config(
     page_title="Medical QA Chatbot",
@@ -30,35 +31,35 @@ with st.container():
         print(f"RAG Enabled: {rag_toggle}")
 
         st.markdown("---")
-
+        
         # Track if upload message already printed
         if "upload_logged" not in st.session_state:
             st.session_state.upload_logged = False
-
+            
         st.markdown("## \U0001F4C2 Upload Data")
         uploaded_files = st.file_uploader("Upload Data", type=["pdf", "txt", "csv"], accept_multiple_files=True, key="file_uploader")
-
+        
         if uploaded_files:
             st.success(f"Uploaded {len(uploaded_files)} file(s) successfully!")
-
+                
             if not st.session_state.upload_logged:
                 print(f"{len(uploaded_files)} file(s) uploaded:")
                 for uploaded_file in uploaded_files:
                     print(f"    - {uploaded_file.name}")
-
+        
                 st.session_state.upload_logged = True  # Prevent re-logging
-
+            
             if st.button("Generate Embeddings", key="generate_embeddings"):
                 print(f"Generating embeddings for {len(uploaded_files)} uploaded file(s)...")
                 generate_embeddings_from_files(uploaded_files)
-                print(f"Embedding generation completed and stored in FAISS.")
-                st.success("Embeddings generated and stored in FAISS.")
+                print(f"Embedding generation completed and stored in ChromaDB.")
+                st.success("Embeddings generated and stored in ChromaDB.")
 
         st.markdown("---")
         st.markdown("## \U0001F4A1 Key Features")
         st.markdown("""
         - **BioBERT for Vector Embeddings**
-        - **FAISS for Vector Storage**
+        - **ChromaDB for Vector Storage**
         - **PySpur AI Agent Tools:**
             - Chat Memory Symptom Reasoner
             - Treatment Recommender
@@ -124,11 +125,11 @@ with st.container():
 
             end_time = time.time()
             response_time = end_time - start_time
-
+            
             # Update metrics tracker
             st.session_state.metrics.record_query(routed_correctly, response_time)
             st.session_state.metrics.print_metrics_summary()
-
+            
             st.rerun()
 
         # Clear button
