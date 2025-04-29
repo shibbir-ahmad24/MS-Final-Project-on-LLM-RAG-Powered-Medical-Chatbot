@@ -18,7 +18,7 @@ model = AutoModel.from_pretrained(MODEL_NAME).to(DEVICE)
 model.eval()
 
 # Initialize ChromaDB
-chroma_client = chromadb.PersistentClient(path="./chromadb_store")
+chroma_client = chromadb.Client()  # Uses in-memory DB for Streamlit Cloud compatibility
 discharge_collection = chroma_client.get_or_create_collection(name="discharge_notes")
 trials_collection = chroma_client.get_or_create_collection(name="clinical_trials")
 
