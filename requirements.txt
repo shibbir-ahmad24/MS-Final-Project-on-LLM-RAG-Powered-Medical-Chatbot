@@ -2,7 +2,7 @@ streamlit==1.32.0
 chromadb==0.4.24
 sentence-transformers==2.2.2
 transformers==4.36.2
-torch==2.1.0
+torch==2.2.0
 spacy==3.7.2
 groq==0.7.0
 serpapi==0.1.5
