@@ -1,11 +1,16 @@
 import os
 import uuid
 import pandas as pd
-import chromadb
 from typing import List
 from transformers import AutoTokenizer, AutoModel
 import torch
 from PyPDF2 import PdfReader
+
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import chromadb
 
 # Constants
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
