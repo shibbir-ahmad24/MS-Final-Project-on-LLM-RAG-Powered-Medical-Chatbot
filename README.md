@@ -1,4 +1,4 @@
-# MS Final Project on Medical Chatbot
+# Medical QA Chatbot Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
 
 # Project Title
 
