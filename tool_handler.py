@@ -1,4 +1,4 @@
-from embedding import get_embedding, discharge_collection, trials_collection
+from embedding import get_embedding, query_faiss, discharge_index, discharge_texts, discharge_metadata, trial_index, trial_texts, trial_metadata
 from groq import Client
 from serpapi import GoogleSearch
 import spacy
@@ -47,12 +47,8 @@ def chat_memory_tool(memory: str, model="llama-3.3-70b-versatile", use_rag=True)
 def treatment_tool(query: str, model="llama-3.3-70b-versatile", use_rag=True) -> str:
     try:
         query_embedding = get_embedding(query)
-        results = discharge_collection.query(
-            query_embeddings=[query_embedding],
-            n_results=5,
-            include=["documents"]
-        )
-        top_docs = results['documents'][0] if use_rag else []
+        results = query_faiss(discharge_index, query_embedding, discharge_texts, discharge_metadata, top_k=5)
+        top_docs = [res['text'] for res in results] if use_rag else []
         combined_context = "\n\n".join(top_docs) if use_rag else ""
         prompt = (
             "You are a helpful medical assistant. Based on the following discharge notes, recommend essential treatment.\n\n"
@@ -102,15 +98,11 @@ def symptom_search_tool(symptom_description: str, model="llama-3.3-70b-versatile
 def trial_matcher_tool(discharge_note: str, model="llama-3.3-70b-versatile", use_rag=True) -> str:
     try:
         query_embedding = get_embedding(discharge_note)
-        results = trials_collection.query(
-            query_embeddings=[query_embedding],
-            n_results=3,
-            include=["documents", "metadatas"]
-        )
+        results = query_faiss(trial_index, query_embedding, trial_texts, trial_metadata, top_k=3)
         matched_trials = []
-        for doc, meta in zip(results['documents'][0], results['metadatas'][0]):
-            nct_id = meta.get("NCT ID", "Unknown ID")
-            trial_info = f"**NCT ID:** {nct_id}\n**Matched Description:** {doc.strip()}"
+        for res in results:
+            nct_id = res['metadata'].get("NCT ID", "Unknown ID")
+            trial_info = f"**NCT ID:** {nct_id}\n**Matched Description:** {res['text'].strip()}"
             matched_trials.append(trial_info)
 
         if not matched_trials:
@@ -134,4 +126,4 @@ def trial_matcher_tool(discharge_note: str, model="llama-3.3-70b-versatile", use
             return "Top Matching Clinical Trials:\n\n" + "\n\n---\n\n".join(matched_trials)
 
     except Exception as e:
-        return f"\u26a0\ufe0f Error during trial matching: {str(e)}"
+        return f"Error during trial matching: {str(e)}"
