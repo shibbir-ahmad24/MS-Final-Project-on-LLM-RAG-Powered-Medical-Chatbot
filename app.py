@@ -53,7 +53,7 @@ with st.container():
                 print(f"Generating embeddings for {len(uploaded_files)} uploaded file(s)...")
                 generate_embeddings_from_files(uploaded_files)
                 print(f"Embedding generation completed and stored in ChromaDB.")
-                st.success("Embeddings generated and stored in ChromaDB.")
+                st.success("Embeddings generated and stored in ChromaDB (in-memory).")
 
         st.markdown("---")
         st.markdown("## \U0001F4A1 Key Features")
@@ -90,6 +90,10 @@ with st.container():
                     st.markdown(entry["user"])
                 with st.chat_message("assistant", avatar="🤖"):
                     st.markdown(entry["response"])
+                    
+        # Ensure embeddings exist if RAG is enabled
+        if rag_toggle and st.session_state.get("upload_logged") is not True:
+            st.warning("Please upload files and generate embeddings before querying.")
 
         # Input query at the end
         user_query = st.chat_input("Ask a question...")
