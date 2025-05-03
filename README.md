@@ -1,4 +1,4 @@
-# Medical QA Chatbot Using PySpur AI Agent, RAG, and LLMs
+# Medical QA Chatbot Using PySpur, RAG, and LLMs
 
 # 🩺 Overview
 
@@ -81,6 +81,35 @@ This project follows a step-by-step approach to build a smart, clinically releva
   - 📋 Clinical Trials: stored with NCT ID and cleaned text blocks
 
 All embeddings are stored in **ChromaDB** for fast, semantic retrieval during live user interaction.
+
+## 🧠 3. Query Understanding & Tool Routing (via PySpur)
+
+When a user submits a question, the system first analyzes the query using keyword-based intent matching (e.g., “symptom”, “treatment”, “trial”).
+
+Once the intent is identified, **PySpur comes into play by managing the registered tool functions**, enabling clean routing and execution.
+
+The system dynamically selects the most relevant tool from four PySpur-registered functions:
+
+- 🔬 Symptom Cause Analyzer – identifies potential causes using trusted web search
+- 💊 Treatment Recommender – retrieves relevant discharge notes to suggest treatments
+- 🧪 Clinical Trial Matcher – matches patient notes to real-world clinical trials
+- 🗂️ Chat Memory Symptom Reasoner – summarizes previously mentioned symptoms
+
+Tool selection is fully automatic — users don’t need to specify anything manually.
+
+## 📡 4. Retrieval-Augmented Generation (RAG)
+
+For tools that use RAG (💊 Treatment Recommender and 🧪 Clinical Trial Matcher):
+
+- The selected tool embeds the user query using BioBERT.
+- It queries the ChromaDB vector store to retrieve the most relevant context chunks.
+- These retrieved chunks are then combined with the original query to form a grounded, context-rich prompt.
+- The final prompt is sent to an LLM (LLaMA or DeepSeek) to generate the answer.
+
+For tools not using RAG (like the 🔬 Symptom Cause Analyzer), alternative mechanisms are used:
+
+- The tool performs a web search via **SerpAPI** on trusted medical sources.
+- Retrieved snippets are summarized using the LLM to explain possible causes.
 
 # Tech Stack
 
