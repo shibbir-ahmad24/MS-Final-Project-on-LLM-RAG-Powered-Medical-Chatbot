@@ -1,8 +1,5 @@
 # Medical QA Chatbot Using PySpur AI Agent, RAG, and LLMs
 
-![image](https://github.com/user-attachments/assets/fbaa4b63-89ac-4f63-b534-18ae3b715ecf)
-
-
 # 🩺 Overview
 
 Doctors, researchers, and even patients often need quick answers from complex medical records and clinical trial information. Discharge summaries contain important details about a patient's condition and treatment, while clinical trials offer potential care options — but both can be hard to understand and time-consuming to search through.
