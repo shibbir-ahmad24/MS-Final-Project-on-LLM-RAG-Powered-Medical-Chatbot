@@ -37,10 +37,18 @@ This project focuses on building an AI assistant that helps users understand com
 - Deploy the app on **Hugging Face Spaces** using **Streamlit SDK** for easy access and testing
 - Focus specifically on **heart-related** cases — not for diagnosis, but to support understanding and decision-making
 
-# Data Source
 
-- discharge note dataset from MIMIC-IV DB: https://physionet.org/content/mimic-iv-note/2.2/note/
-- clinical trials from ClinicalTrials.gov API: https://clinicaltrials.gov/data-api/api
+# 📊 Data Sources
+
+This chatbot is powered by real-world, clinically relevant datasets:
+
+🏥 Discharge Summaries from the MIMIC-IV Note dataset
+- Rich, de-identified patient discharge notes from intensive care units — ideal for training and testing clinical reasoning.
+- Link: https://physionet.org/content/mimic-iv-note/2.2/note/
+
+📋 Clinical Trial Data via the ClinicalTrials.gov API
+- Up-to-date information on completed clinical trials, including inclusion/exclusion criteria and interventions.
+- Link: https://clinicaltrials.gov/data-api/api
 
 # Workflow Diagram
 
