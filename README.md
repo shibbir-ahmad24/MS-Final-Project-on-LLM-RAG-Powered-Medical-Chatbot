@@ -1,19 +1,27 @@
-# 🩺 Medical QA Chatbot Using PySpur AI Agent, RAG, and LLMs
+# Medical QA Chatbot Using PySpur AI Agent, RAG, and LLMs
 
-# Overview
+# 🩺 Overview
 
 Doctors, researchers, and even patients often need quick answers from complex medical records and clinical trial information. Discharge summaries contain important details about a patient's condition and treatment, while clinical trials offer potential care options — but both can be hard to understand and time-consuming to search through.
 
 This project introduces a smart medical chatbot that uses **PySpur AI agent, Retrieval-Augmented Generation (RAG)**, and **Large Language Models (LLMs)** to answer **heart attack/failure** related questions. It works by analyzing real **MIMIC-IV discharge notes** and **clinical trial data**, using **BioBERT** and a **ChromaDB vector store** to find and understand relevant information. The chatbot helps users get accurate, context-aware answers — making medical information easier to access and understand.
 
-# Problem Statement
+# ❗ Problem Statement
 
-The challenge addressed by this project is the difficulty of accurately understanding and extracting critical patient information from complex medical discharge summaries and clinical trial data. Key issues include:
-- Medical discharge summaries are filled with intricate and specialized terminology, making it challenging to extract relevant details effectively.
-- Traditional chatbot models often suffer from hallucinations, generating inaccurate or misleading responses when queried about medical data.
-- There is a lack of effective, structured retrieval methods to ensure that chatbot responses are grounded in real, clinically relevant data, which is crucial for accurate healthcare decision-making.
-  
-To overcome these challenges, this project integrates a Retrieval-Augmented Generation (RAG) pipeline to enhance chatbot performance. The system will leverage PySpur’s retrieval mechanism to ensure context-aware and accurate information retrieval, followed by response generation using large language models (LLMs) to minimize hallucinations. The goal is to provide healthcare professionals and researchers with a more accurate, reliable AI assistant that can extract, analyze, and present critical medical data from discharge summaries and clinical trials to support informed decision-making and improve patient care.
+Medical discharge summaries and clinical trial descriptions are often packed with complex medical terms and dense formatting, making them hard to understand quickly — even for healthcare professionals. Whether you're trying to extract key information about a patient’s history or find relevant clinical trials, manually digging through these documents takes time and effort.
+
+On top of that, traditional AI chatbots often fall short. They may give answers that sound confident but aren't grounded in real data — a problem known as **hallucination**. In medicine, that kind of inaccuracy isn’t just unhelpful — it can be dangerous.
+
+This project tackles those challenges head-on by building a smarter, safer **medical chatbot**. It combines:
+
+- **BioBERT** for understanding and embedding clinical language,
+
+- LLMs like **LLaMA** and **DeepSeek** for generating natural, helpful answers, and
+
+- **PySpur** and **Retrieval-Augmented Generation (RAG)** to make sure those answers are backed by real discharge notes and clinical trial data.
+
+The result is a reliable AI assistant that understands medical language, pulls information from real-world documents, and responds clearly — helping clinicians, researchers, and patients make better, faster decisions.
+
 
 
 # Objective
