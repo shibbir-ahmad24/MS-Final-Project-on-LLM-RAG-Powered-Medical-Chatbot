@@ -111,6 +111,28 @@ For tools not using RAG (like the 🔬 Symptom Cause Analyzer), alternative mech
 - The tool performs a web search via **SerpAPI** on trusted medical sources.
 - Retrieved snippets are summarized using the LLM to explain possible causes.
 
+## 🤖 5. Response Generation using LLMs
+
+- The composed prompt is passed to a Large Language Model (LLama 3 or DeepSeek) for response generation.
+- The model produces clear, concise, and clinically grounded answers tailored to the user's question and the retrieved context.
+- This helps minimize hallucinations and ensures real-world relevance.
+
+## 💬 6. Real-Time Chat Interface (Streamlit)
+
+- The chatbot is built using Streamlit, offering a simple, responsive UI for users to:
+
+  - Ask clinical questions interactively
+  - Switch between LLMs and toggle RAG mode
+  - View past queries and system responses in chat format
+  - Reset the session as needed
+
+🚀 7. Cloud Deployment (Hugging Face Spaces)
+
+- The full application — including embeddings, vector database, model interface, and UI — is deployed to Hugging Face Spaces.
+- Users can access the chatbot directly in the browser without login, thanks to:
+  - Automatic unzipping and loading of ChromaDB on startup
+  - Built-in support for anonymous access and cloud-based execution
+
 # Tech Stack
 
 - **Python:** Core programming language for development.
