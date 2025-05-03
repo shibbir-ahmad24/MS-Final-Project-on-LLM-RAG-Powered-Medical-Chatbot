@@ -139,7 +139,7 @@ While I am not using PySpur as a full agent yet, PySpur still plays a key backen
 
 ### 1. 🔧 Tool Wrapping with @tool_function
    
-Each of your tools (e.g., treatment_tool, trial_matcher_tool) is wrapped using PySpur’s @tool_function decorator.
+Each of my tools (e.g., treatment_tool, trial_matcher_tool) is wrapped using PySpur’s @tool_function decorator.
 
 ✅ This allows:
 
