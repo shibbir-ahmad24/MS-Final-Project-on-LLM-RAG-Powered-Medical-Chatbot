@@ -2,7 +2,9 @@
 
 # Overview
 
-Healthcare professionals and researchers often need quick and reliable insights from medical records, especially discharge summaries, which contain critical patient information. This project aims to build an **AI-powered medical chatbot** that leverages **PySpur RAG (Retrieval-Augmented Generation) mechanism and Large Language Models (LLMs)** to answer clinical questions based on real-world patient discharge notes from the **MIMIC-IV dataset**. By integrating **advanced NLP techniques**, this chatbot will provide meaningful, **context-aware responses** to help healthcare professionals, researchers, and even patients understand complex medical summaries efficiently.
+Doctors, researchers, and even patients often need quick answers from complex medical records and clinical trial information. Discharge summaries contain important details about a patient's condition and treatment, while clinical trials offer potential care options — but both can be hard to understand and time-consuming to search through.
+
+This project introduces a smart medical chatbot that uses **PySpur AI agents, Retrieval-Augmented Generation (RAG)**, and **Large Language Models (LLMs)** to answer health-related questions. It works by analyzing real **MIMIC-IV discharge notes** and **clinical trial data**, using **BioBERT** and a **ChromaDB vector store** to find and understand relevant information. The chatbot helps users get accurate, context-aware answers — making medical information easier to access and understand.
 
 # Problem Statement
 
