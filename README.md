@@ -199,7 +199,7 @@ Try the chatbot live: [🩺 Medical QA Chatbot on Hugging Face Spaces](https://h
 
 ## 📦 Installation & Local Run
 ```
-git clone https://github.com/your-username/Medical_QA_Chatbot.git
+git clone https://github.com/shibbir-ahmad24/Medical-QA-Chatbot-Using-PySpur-RAG-and-LLMs.git
 cd Medical_QA_Chatbot
 pip install -r requirements.txt
 streamlit run app.py
