@@ -69,7 +69,8 @@ This project follows a step-by-step approach to build a smart, clinically releva
 - Queried and filtered 603 heart attack-related trials, then cleaned inclusion/exclusion criteria.
 - Final dataset includes 594 well-structured trials with reliable metadata and clear eligibility information.
 
-🔎 2. Embedding & Storage
+## 🔎 2. Embedding & Storage
+
 - **BioBERT Embeddings:**
   - Used BioBERT, a pretrained biomedical transformer, to convert all medical text into vector embeddings.
 
