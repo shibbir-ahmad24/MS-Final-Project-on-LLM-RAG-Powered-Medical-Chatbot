@@ -52,7 +52,7 @@ This chatbot is powered by real-world, clinically relevant datasets:
 
 ## 🧭 Workflow Diagram
 
-![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
+![Workflow](https://github.com/shibbir-ahmad24/Medical-QA-Chatbot-Using-PySpur-RAG-and-LLMs/blob/main/Chatbot-workflow.jpg)
 
 ## ⚙️ Methodology
 
