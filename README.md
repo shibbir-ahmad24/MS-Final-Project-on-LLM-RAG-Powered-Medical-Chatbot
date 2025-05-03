@@ -1,4 +1,4 @@
-#An Intelligent **Medical QA Chatbot** Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
+# An Intelligent **Medical QA Chatbot** Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
 
 # Overview
 
