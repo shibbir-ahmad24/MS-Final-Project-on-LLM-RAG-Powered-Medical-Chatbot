@@ -54,19 +54,32 @@ This chatbot is powered by real-world, clinically relevant datasets:
 
 ![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
 
-# Methodology Overview
+# ⚙️ Methodology
 
-This project follows a structured approach to developing a PySpur-powered RAG chatbot for clinical question answering. 
+This project follows a step-by-step approach to build a smart, clinically relevant chatbot using PySpur, RAG, and LLMs, with a focus on heart attack and heart failure data.
 
-The methodology involves:
-- **Data Ingestion & Preprocessing:** Extracting discharge notes from MIMIC-IV dataset and clinical trial data from ClinicalTrials.gov API, followed by cleaning, segmenting, and categorizing the text for better structuring.
-- **Embedding & Storage:** Using BioBERT for medical text vectorization and storing embeddings efficiently in PySpur Vector DB to enable fast and relevant retrieval.
-- **Query Processing & Retrieval:** When a user submits a medical query, PySpur’s retrieval mechanism fetches the most relevant top-K text chunks from the Vector DB, ensuring context-aware information retrieval.
-- **Response Generation with LLM:** The retrieved information is passed to an LLM, which generates accurate, relevant, and contextually grounded responses while minimizing hallucinations.
-- **Evaluation & Debugging:** PySpur’s built-in execution tracing and evaluation tools will be used to compare RAG-based responses vs. standard LLM responses, refining the chatbot’s accuracy.
-- User Interface & Deployment: The chatbot will be deployed using Streamlit, providing healthcare professionals and researchers with an intuitive interface for seamless interaction.
+## 📥 1. Data Ingestion & Preprocessing
 
-By integrating PySpur’s RAG pipeline, this methodology ensures that the chatbot not only retrieves the most relevant medical information but also generates precise and reliable responses tailored to Heart Attack/Failure related queries.
+**Discharge Notes (MIMIC-IV):**
+- Extracted over 430,000 patient records and filtered them down to 13,642 with heart-related diagnoses.
+- Merged with discharge notes and isolated key sections like History of Present Illness and Hospital Course.
+- Resulted in 9,000+ clean notes, chunked into ~26,800 paragraphs for contextual embedding.
+
+**Clinical Trials (ClinicalTrials.gov):**
+- Queried and filtered 603 heart attack-related trials, then cleaned inclusion/exclusion criteria.
+- Final dataset includes 594 well-structured trials with reliable metadata and clear eligibility information.
+
+🔎 2. Embedding & Storage
+- **BioBERT Embeddings:**
+  - Used BioBERT, a pretrained biomedical transformer, to convert all medical text into vector embeddings.
+
+- **ChromaDB Collections:**
+
+  - 🧾 Discharge Notes: stored with subject_id and hadm_id
+  
+  - 📋 Clinical Trials: stored with NCT ID and cleaned text blocks
+
+All embeddings are stored in **ChromaDB** for fast, semantic retrieval during live user interaction.
 
 # Tech Stack
 
