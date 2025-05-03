@@ -133,6 +133,39 @@ For tools not using RAG (like the 🔬 Symptom Cause Analyzer), alternative mech
   - Automatic unzipping and loading of ChromaDB on startup
   - Built-in support for anonymous access and cloud-based execution
 
+# 🧠 How PySpur Works
+
+While I am not using PySpur as a full agent yet, PySpur still plays a key backend role by standardizing and managing my tools. Here's how it works under the hood:
+
+### 1. 🔧 Tool Wrapping with @tool_function
+   
+Each of your tools (e.g., treatment_tool, trial_matcher_tool) is wrapped using PySpur’s @tool_function decorator.
+
+✅ This allows:
+
+- Automatic creation of structured input/output models
+- Consistent function signatures for all tools
+- Tools to behave like modular “nodes” — pluggable into larger workflows
+
+### 2. 🗂 Tool Metadata Storage
+
+The decorator also registers important metadata about each tool:
+  - Tool name and description
+  - Expected input parameters and types
+  - Output schema
+
+✅ This metadata can later be used for:
+  - Auto-generating interfaces (like UIs)
+  - Validating inputs before execution
+  - Logging, tracing, or error debugging
+  - Seamless orchestration in agent workflows
+
+### 3. 🧩 Enabling Modularity & Future Agents
+
+By standardizing tools now, I am laying the groundwork to:
+- Easily compose multi-step workflows
+- Let a PySpur Agent dynamically choose tools based on reasoning
+
 # Tech Stack
 
 - **Python:** Core programming language for development.
