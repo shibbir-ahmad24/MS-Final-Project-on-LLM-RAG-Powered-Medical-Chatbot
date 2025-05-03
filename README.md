@@ -166,16 +166,6 @@ By standardizing tools now, I am laying the groundwork to:
 - Easily compose multi-step workflows
 - Let a PySpur Agent dynamically choose tools based on reasoning
 
-## Tech Stack
-
-- **Python:** Core programming language for development.
-- **Hugging Face Transformers:** For integrating large language models (LLMs).
-- **PySpur:** For efficient vector database-based retrieval in the RAG pipeline.
-- **SQL:** For structured data management and querying.
-- **Jupyter Notebook:** For exploration, prototyping, and experimentation.
-- **Streamlit:** For deployment and building the user interface (UI).
-
-
 ## 🛠️ Tech Stack
 
 - **Python:** Main programming language used across all components.
