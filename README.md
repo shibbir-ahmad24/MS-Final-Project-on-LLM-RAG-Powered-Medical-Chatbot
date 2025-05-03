@@ -1,7 +1,3 @@
-# Medical QA Chatbot Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
-
-# Project Title
-
 An Intelligent **Medical QA Chatbot** Using PySpur AI Agent, Retrieval-Augmented Generation, and LLMs
 
 # Overview
