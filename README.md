@@ -196,3 +196,18 @@ streamlit run app.py
 ```
 
 ## 📸 UI Preview
+
+![image](https://github.com/user-attachments/assets/2c328fdb-d3d0-4194-aa67-abf92c5457de)
+
+![image](https://github.com/user-attachments/assets/184403eb-5b4d-4282-bc00-c55a0748aa82)
+
+![image](https://github.com/user-attachments/assets/eb8b4438-11c5-4c1a-a252-101bff0f14ea)
+
+![image](https://github.com/user-attachments/assets/797e0a3e-2b06-4d41-bb2b-fd24cdb21627)
+
+![image](https://github.com/user-attachments/assets/ae0602fa-993a-42c4-aa52-d10aadd7ae45)
+
+
+
+
+
