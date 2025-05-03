@@ -50,7 +50,7 @@ This chatbot is powered by real-world, clinically relevant datasets:
 - Up-to-date information on completed clinical trials, including inclusion/exclusion criteria and interventions.
 - Link: https://clinicaltrials.gov/data-api/api
 
-# Workflow Diagram
+# 🧭 Workflow Diagram
 
 ![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
 
