@@ -23,19 +23,19 @@ This project tackles those challenges head-on by building a smarter, safer **med
 The result is a reliable AI assistant that understands medical language, pulls information from real-world documents, and responds clearly — helping clinicians, researchers, and patients make better, faster decisions.
 
 
+# 🎯 Objective
 
-# Objective
+This project focuses on building an AI assistant that helps users understand complex medical information — with a special focus on heart attacks and heart failure — using real discharge summaries and clinical trial data.
 
-This project aims to develop a medical chatbot that utilizes a Retrieval-Augmented Generation (RAG) pipeline for enhanced accuracy and context-aware responses. 
+**Key objectives include:**
 
-The objectives of the project are:
-- Develop a medical chatbot that integrates a RAG-based pipeline for retrieving and generating responses from MIMIC-IV discharge summaries and clinical trial data, focusing on heart attack/failure cases.
-- Implement a structured retrieval system using BioBERT for embedding medical text and PySpur Vector DB for efficient and relevant information retrieval.
-- Evaluate the chatbot’s effectiveness in answering clinical questions related to heart attack/failure discharge summaries, ensuring accurate and reliable information.
-- Compare the performance of the chatbot with RAG-based retrieval and generation against the same chatbot using a traditional LLM-based approach to assess improvements in accuracy, relevance, and reduction of hallucinations.
-- Deploy the chatbot using Streamlit, providing a user-friendly interface for healthcare professionals and researchers to efficiently interact with the system.
-
-The scope of the chatbot will be confined to understanding and responding to clinical queries about heart attack/failure-related discharge summaries. It will not be designed for real-time diagnosis but will serve as an AI assistant to help medical professionals and researchers navigate and interpret patient records more effectively, thereby supporting clinical decision-making and research.
+- Use **Retrieval-Augmented Generation (RAG)** to ground answers in real, trusted medical documents
+- Embed and search discharge notes and clinical trials using **BioBERT** and **ChromaDB**
+- Route queries through PySpur AI agents to four custom tools based on the type of question
+- Generate clear, accurate answers using LLMs like **LLaMA-3** and **DeepSeek**
+- Compare chatbot performance with and without RAG to evaluate improvements
+- Deploy the app on **Hugging Face Spaces** using **Streamlit SDK** for easy access and testing
+- Focus specifically on **heart-related** cases — not for diagnosis, but to support understanding and decision-making
 
 # Data Source
 
