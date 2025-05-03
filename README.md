@@ -1,12 +1,12 @@
 # Medical QA Chatbot Using PySpur, RAG, and LLMs
 
-# 🩺 Overview
+## 🩺 Overview
 
 Doctors, researchers, and even patients often need quick answers from complex medical records and clinical trial information. Discharge summaries contain important details about a patient's condition and treatment, while clinical trials offer potential care options — but both can be hard to understand and time-consuming to search through.
 
 This project introduces a smart medical chatbot that uses **PySpur AI agent, Retrieval-Augmented Generation (RAG)**, and **Large Language Models (LLMs)** to answer **heart attack/failure** related questions. It works by analyzing real **MIMIC-IV discharge notes** and **clinical trial data**, using **BioBERT** and a **ChromaDB vector store** to find and understand relevant information. The chatbot helps users get accurate, context-aware answers — making medical information easier to access and understand.
 
-# ❗ Problem Statement
+## ❗ Problem Statement
 
 Medical discharge summaries and clinical trial descriptions are often packed with complex medical terms and dense formatting, making them hard to understand quickly — even for healthcare professionals. Whether you're trying to extract key information about a patient’s history or find relevant clinical trials, manually digging through these documents takes time and effort.
 
@@ -23,7 +23,7 @@ This project tackles those challenges head-on by building a smarter, safer **med
 The result is a reliable AI assistant that understands medical language, pulls information from real-world documents, and responds clearly — helping clinicians, researchers, and patients make better, faster decisions.
 
 
-# 🎯 Objective
+## 🎯 Objective
 
 This project focuses on building an AI assistant that helps users understand complex medical information — with a special focus on heart attacks and heart failure — using real discharge summaries and clinical trial data.
 
@@ -38,7 +38,7 @@ This project focuses on building an AI assistant that helps users understand com
 - Focus specifically on **heart-related** cases — not for diagnosis, but to support understanding and decision-making
 
 
-# 📊 Data Sources
+## 📊 Data Sources
 
 This chatbot is powered by real-world, clinically relevant datasets:
 
@@ -50,15 +50,15 @@ This chatbot is powered by real-world, clinically relevant datasets:
 - Up-to-date information on completed clinical trials, including inclusion/exclusion criteria and interventions.
 - Link: https://clinicaltrials.gov/data-api/api
 
-# 🧭 Workflow Diagram
+## 🧭 Workflow Diagram
 
 ![Workflow](https://github.com/shibbir-ahmad24/MS-Final-Project-on-LLM-RAG-Powered-Medical-Chatbot/blob/main/Medical-chatbot-workflow.jpg)
 
-# ⚙️ Methodology
+## ⚙️ Methodology
 
 This project follows a step-by-step approach to build a smart, clinically relevant chatbot using PySpur, RAG, and LLMs, with a focus on heart attack and heart failure data.
 
-## 📥 1. Data Ingestion & Preprocessing
+### 📥 1. Data Ingestion & Preprocessing
 
 **Discharge Notes (MIMIC-IV):**
 - Extracted over 430,000 patient records and filtered them down to 13,642 with heart-related diagnoses.
@@ -69,7 +69,7 @@ This project follows a step-by-step approach to build a smart, clinically releva
 - Queried and filtered 603 heart attack-related trials, then cleaned inclusion/exclusion criteria.
 - Final dataset includes 594 well-structured trials with reliable metadata and clear eligibility information.
 
-## 🔎 2. Embedding & Storage
+### 🔎 2. Embedding & Storage
 
 - **BioBERT Embeddings:**
   - Used BioBERT, a pretrained biomedical transformer, to convert all medical text into vector embeddings.
@@ -82,7 +82,7 @@ This project follows a step-by-step approach to build a smart, clinically releva
 
 All embeddings are stored in **ChromaDB** for fast, semantic retrieval during live user interaction.
 
-## 🧠 3. Query Understanding & Tool Routing (via PySpur)
+### 🧠 3. Query Understanding & Tool Routing (via PySpur)
 
 When a user submits a question, the system first analyzes the query using keyword-based intent matching (e.g., “symptom”, “treatment”, “trial”).
 
@@ -97,7 +97,7 @@ The system dynamically selects the most relevant tool from four PySpur-registere
 
 Tool selection is fully automatic — users don’t need to specify anything manually.
 
-## 📡 4. Retrieval-Augmented Generation (RAG)
+### 📡 4. Retrieval-Augmented Generation (RAG)
 
 For tools that use RAG (💊 Treatment Recommender and 🧪 Clinical Trial Matcher):
 
@@ -111,13 +111,13 @@ For tools not using RAG (like the 🔬 Symptom Cause Analyzer), alternative mech
 - The tool performs a web search via **SerpAPI** on trusted medical sources.
 - Retrieved snippets are summarized using the LLM to explain possible causes.
 
-## 🤖 5. Response Generation using LLMs
+### 🤖 5. Response Generation using LLMs
 
 - The composed prompt is passed to a Large Language Model (LLama 3 or DeepSeek) for response generation.
 - The model produces clear, concise, and clinically grounded answers tailored to the user's question and the retrieved context.
 - This helps minimize hallucinations and ensures real-world relevance.
 
-## 💬 6. Real-Time Chat Interface (Streamlit)
+### 💬 6. Real-Time Chat Interface (Streamlit)
 
 - The chatbot is built using Streamlit, offering a simple, responsive UI for users to:
 
@@ -133,7 +133,7 @@ For tools not using RAG (like the 🔬 Symptom Cause Analyzer), alternative mech
   - Automatic unzipping and loading of ChromaDB on startup
   - Built-in support for anonymous access and cloud-based execution
 
-# 🧠 How PySpur Works
+## 🧠 How PySpur Works
 
 While I am not using PySpur as a full agent yet, PySpur still plays a key backend role by standardizing and managing my tools. Here's how it works under the hood:
 
@@ -166,7 +166,7 @@ By standardizing tools now, I am laying the groundwork to:
 - Easily compose multi-step workflows
 - Let a PySpur Agent dynamically choose tools based on reasoning
 
-# Tech Stack
+## Tech Stack
 
 - **Python:** Core programming language for development.
 - **Hugging Face Transformers:** For integrating large language models (LLMs).
@@ -175,6 +175,34 @@ By standardizing tools now, I am laying the groundwork to:
 - **Jupyter Notebook:** For exploration, prototyping, and experimentation.
 - **Streamlit:** For deployment and building the user interface (UI).
 
-# Project Deadline 
 
-May 02, 2025
+## 🛠️ Tech Stack
+
+- **Python:** Main programming language used across all components.
+- **BioBERT (via Hugging Face Transformers):** Used to generate domain-specific embeddings for medical text.
+- **ChromaDB:** High-performance vector database for storing and retrieving embedded medical data.
+- **PySpur:** Provides standardized tool registration and modular execution logic for clean integration of AI tools.
+- **Streamlit:** Used to build and deploy the chatbot interface on Hugging Face Spaces.
+- **SQL (PostgreSQL):** Initially used for querying structured patient and diagnosis records from the MIMIC-IV database.
+- **Jupyter Notebook:** Used during data preprocessing, exploration, and prototyping before system integration.
+
+## 🚀 Live Demo
+
+Try the chatbot live: [🩺 Medical QA Chatbot on Hugging Face Spaces](https://huggingface.co/spaces/shibbir24/Medical_QA_Chatbot)
+
+## 💬 Example Queries
+```
+- Recommend treatment for a patient with myocardial infarction who received aspirin and oxygen therapy.
+- What clinical trials are available for patients with heart failure?
+- Explain possible causes of fatigue based on symptom history.
+```
+
+## 📦 Installation & Local Run
+```
+git clone https://github.com/your-username/Medical_QA_Chatbot.git
+cd Medical_QA_Chatbot
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 📸 UI Preview
